@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="font-fontawesome-ae333ffef2.js"></script>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    * {
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 1440px;
+    }
+
+    header {
+        height: 100px;
+        background-color: rgb(255, 255, 255);
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    hr {
+        border-color: black;
+        border-width: 0.1px;
+    }
+
+    .logoHeader {
+        display: flex;
+    }
+
+    .logoHeader p {
+        font-size: x-large;
+        font-weight: bolder;
+    }
+
+    .menu ul {
+        margin-left: 100px;
+        display: flex;
+    }
+
+    .menu ul li {
+        margin: 20px;
+        list-style: none;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .iconNavigate i {
+        margin: 20px;
+    }
+
+    main {
+        display: flex;
+        max-width: 85%;
+        margin-top: 50px;
+    }
+
+    .box-left {
+        width: 65%;
+    }
+
+    .box-right {
+        width: 35%;
+        margin-left: 60px;
+        background-color: #F9F1E7;
+        height: 400px;
+        line-height: 50px
+    }
+
+    table {
+        border-collapse: collapse;
+        text-align: center;
+    }
+
+    thead {
+        background-color: #F9F1E7;
+        height: 55px;
+    }
+
+    table thead th {
+        font-size: 16px;
+    }
+
+    tbody td {
+        padding-top: 50px;
+    }
+
+    .subtotal,
+    .total {
+        display: flex;
+    }
+
+    .box-right button {
+        width: 220px;
+        height: 60px;
+        border-radius: 15px;
+        font-size: 20px;
+        font-weight: 400;
+        margin-left: 90px;
+        margin-top: 50px;
+        background-color: #F9F1E7;
+    }
+
+    .price {
+        color: #9F9F9F;
+    }
+
+    .price-total {
+        color: #B88E2F;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .subtotal {
+        margin-top: 50px;
+    }
+
+    .services {
+        margin-top: 50px;
+        display: flex;
+        height: 270px;
+        background-color: #FAF3EA;
+        align-items: center;
+    }
+
+    .services img {
+        height: 70px;
+    }
+
+    footer {
+        display: flex;
+        margin-top: 30px;
+        line-height: 50px;
+        font-weight: 500;
+    }
+
+    .copyright {
+        width: 92%;
+    }
+
+    .title-footer {
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    .newletter input,
+    .newletter button {
+        outline: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        margin: 10px;
+    }
+
+    input::placeholder {
+        font-weight: 400;
+        color: #9F9F9F;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="menuBar">
+                <div class="logoHeader">
+                    <a href="">
+                        <img src="/images/Meubel House_Logos-05.png" alt="">
+                    </a>
+                    <p class="logo-text">Furniro</p>
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Shop.html">Shop</a></li>
+                    <li><a href="index.html">About</a></li>
+                    <li><a href="index.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="iconNavigate">
+                <i class="fa-regular fa-user"></i>
+                <i class="fas fa-search"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fas fa-shopping-cart"></i> accordion
+            </div>
+        </header>
+        <div class="banner">
+            <img src="images/Group 78.png" alt="">
+        </div>
+        <main>
+            <div class="box-left">
+                <table>
+                    <thead>
+                        <th style="width: 15%;"></th>
+                        <th style="width: 15%;">Product</th>
+                        <th style="width: 20%;">Price</th>
+                        <th style="width: 20%;">Quantity</th>
+                        <th style="width: 10%;">Subtotal</th>
+                        <th style="width: 10%;"></th>
+                    </thead>
+                    <tbody>
+                        <td>
+                            <img src="/images/Group 146.png" alt="">
+                        </td>
+                        <td style="color: #9F9F9F;">Asgaard sofa</td>
+                        <td style="color: #9F9F9F;">25.000.000đ</td>
+                        <td>
+                            1
+                        </td>
+                        <td>25.000.000đ</td>
+                        <td><i class="fa-solid fa-trash" style="color: red;"></i></td>
+                    </tbody>
+                </table>
+            </div>
+            <div class="box-right">
+                <div class="title">
+                    <h2 style="text-align: center;margin-top: 20px;">Cart Totals</h2>
+                </div>
+                <div class="subtotal">
+                    <p>Subtotal</p>
+                    <p class="price">25.000.000đ</p>
+                </div>
+                <div class="total">
+                    <p>Total</p>
+                    <p class="price-total">25.000.000đ</p>
+                </div>
+                <button><a style="text-decoration: none; color: black;" href="checkout.html">Check Out</a></button>
+            </div>
+        </main>
+        <div class="services">
+            <img src="/images/Frame 5.png" alt="" style="width: 337px;">
+            <img src="/images/Frame 19.png" alt="" style="width: 328px;">
+            <img src="/images/Frame 2.png" alt="" style="width: 244px;">
+            <img src="/images/Frame 4.png" alt="" style="width: 259px;">
+        </div>
+        <footer>
+            <div class="company">
+                <p class="title-footer">Funiro.</p>
+                <p>400 University Drive Suite 200 Coral <br> Gables,<br>
+                    FL 33134 USA</p>
+            </div>
+            <div class="links">
+                <p style="color: #9F9F9F;">Links</p>
+                <p>Home</p>
+                <p>Shop</p>
+                <p>About</p>
+                <p>Contact</p>
+            </div>
+            <div class="help">
+                <p style="color: #9F9F9F;">Help</p>
+                <p>Payment Options</p>
+                <p>Returns</p>
+                <p>Privacy Policies</p>
+            </div>
+            <div class="newletter">
+                <p style="color: #9F9F9F;">Newsletter</p>
+                <input type="text" placeholder="Enter Your Email Address">
+                <button>SUBSCRIBE</button>
+            </div>
+        </footer>
+        <div class="copyright">
+            <hr style="color: #D9D9D9;margin-top: 50px;">
+            <p style="margin-top: 30px;margin-bottom: 50px;">2023 furino. All rights reverved</p>
+        </div>
+    </div>
+</body>
+
+</html>

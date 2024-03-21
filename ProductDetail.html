@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./font-fontawesome-ae333ffef2.js"></script>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    * {
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 1440px;
+    }
+
+    header {
+        height: 100px;
+        background-color: rgb(255, 255, 255);
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .logoHeader {
+        display: flex;
+    }
+
+    .logoHeader p {
+        font-size: x-large;
+        font-weight: bolder;
+    }
+
+    .menu ul {
+        margin-left: 100px;
+        display: flex;
+    }
+
+    .menu ul li {
+        margin: 20px;
+        list-style: none;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .iconNavigate i {
+        margin: 20px;
+    }
+
+    .detai-navigate {
+        background-color: #F9F1E7;
+    }
+
+    .detai-navigate .child {
+        margin-top: 15px;
+        display: flex;
+        height: 100px;
+        align-items: center;
+        width: 25%;
+        margin-right: 1000px;
+    }
+
+    .product-name {
+        border-left: 2px solid #9F9F9F;
+        height: 40px;
+        width: 150px;
+        text-align: center;
+    }
+
+    .product-name p {
+        margin-top: 8px;
+    }
+
+    .page-name {
+        color: #9F9F9F;
+    }
+
+    .detail-product {
+        display: flex;
+        margin-top: 50px;
+        max-width: 90%;
+    }
+
+    .box-left {
+        line-height: 70px;
+    }
+
+    .box-right {
+        width: 80%;
+        margin-left: 90px;
+    }
+
+    .product_name h2 {
+        font-size: 42px;
+        font-weight: 400;
+    }
+
+    .price {
+        margin-top: 10px;
+    }
+
+    .price h3 {
+        font-size: 24px;
+        font-weight: 500;
+        color: #9F9F9F;
+    }
+
+    .description p {
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 19.5px;
+    }
+
+    .addToCart {
+        margin-top: 50px;
+        margin-right: 30px;
+    }
+
+    .addToCart,
+    .selectQuantity,
+    .compare,
+    .add {
+        align-items: center;
+        display: flex;
+        height: 65px;
+    }
+
+    .selectQuantity {
+        border: 1px solid #9F9F9F;
+        width: 123px;
+        border-radius: 10px;
+    }
+
+    .add,
+    .compare {
+        width: 215px;
+        border-radius: 10px;
+        border: 1px solid black;
+    }
+
+    .child-parameter {
+        margin: 5px;
+        display: flex;
+    }
+
+    .child-parameter .p1 {
+        width: 80px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .icon,
+    .child-parameter p {
+        margin-left: 10px;
+        padding: 0;
+    }
+
+    .child-parameter a {
+        margin: 10px;
+    }
+
+    .desciption-section1 .title {
+        display: flex;
+        margin-top: 50px;
+        font-size: 24px;
+        margin-left: 300px;
+        margin-right: 300px;
+    }
+
+    .desciption-section1 .title h3 {
+        font-weight: 500;
+    }
+
+    .desciption {
+        width: 75%;
+        margin-top: 30px;
+        color: #9F9F9F;
+    }
+
+    .image-des {
+        width: 90%;
+        margin-top: 25px;
+        display: flex;
+    }
+
+    .products {
+        display: flex;
+    }
+
+    .card {
+        margin-top: 40px;
+        margin-bottom: 45px;
+        line-height: 35px;
+        background-color: rgb(237, 241, 241);
+    }
+
+    .text-item,
+    .discount {
+        margin-left: 10px;
+
+    }
+
+    .discount {
+        display: flex;
+        width: 40%;
+        gap: 10px;
+        float: left;
+    }
+
+    .relatedProducts h2 {
+        margin-top: 50px;
+        text-align: center;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    .more p {
+        font-weight: 600;
+        font-size: 16px;
+        color: #B88E2F;
+        border: 2px solid #B88E2F;
+        display: flex;
+        height: 50px;
+        align-items: center;
+        justify-content: center;
+        width: 15%;
+    }
+
+    footer {
+        display: flex;
+        margin-top: 30px;
+        line-height: 50px;
+        font-weight: 500;
+    }
+
+    .copyright {
+        width: 92%;
+    }
+
+    .title-footer {
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    .newletter input,
+    button {
+        outline: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        margin: 10px;
+    }
+
+    input::placeholder {
+        font-weight: 400;
+        color: #9F9F9F;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="menuBar">
+                <div class="logoHeader">
+                    <a href="">
+                        <img src="./images/Meubel House_Logos-05.png" alt="">
+                    </a>
+                    <p class="logo-text">Furniro</p>
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Shop.html">Shop</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="iconNavigate">
+                <i class="fa-regular fa-user"></i>
+                <i class="fas fa-search"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </header>
+        <main>
+            <div class="detai-navigate">
+                <div class="child">
+                    <div class="page-name">
+                        <p>Home</p>
+                    </div>
+                    <div class="engle-right">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    <div class="page-name">
+                        <p>Shop</p>
+                    </div>
+                    <div class="engle-right">
+                        <i class="fa-solid fa-angle-right"></i>
+                    </div>
+                    <div class="product-name">
+                        <p>Asgaard sofa</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="detail-product">
+                <div class="box-left">
+                    <div class="detail-image">
+                        <img src="./images/Group 94.png" alt="">
+                    </div>
+                    <div class="detail-image">
+                        <img src="./images/Group 94.png" alt="">
+                    </div>
+                    <div class="detail-image">
+                        <img src="./images/Group 94.png" alt="">
+                    </div>
+                    <div class="detail-image">
+                        <img src="./images/Group 94.png" alt="">
+                    </div>
+                </div>
+                <div class="box-center">
+                    <img src="./images/Group 95.png" alt="">
+                </div>
+                <div class="box-right">
+                    <div class="product_name">
+                        <h2>Asgaard sofa</h2>
+                    </div>
+                    <div class="price">
+                        <h3>25.000.000đ</h3>
+                    </div>
+                    <div class="desciption">
+                        <p>Setting the bar as one of the loudest speakers in its class, the Kilburn is a compact,
+                            stout-hearted hero with a well-balanced audio which boasts a clear midrange and extended
+                            highs for a sound.
+
+                        </p>
+                    </div>
+                    <div class="addToCart">
+                        <div class="selectQuantity">
+                            <div class="minus"><i class="fa-solid fa-minus"></i></div>
+                            <div class="quantity">1</div>
+                            <div class="plus"><i class="fa-solid fa-plus"></i></div>
+                        </div>
+                        <div class="add">
+                            <p>Add To Cart</p>
+                        </div>
+                        <div class="compare">
+                            <p>Compare</p>
+                        </div>
+                    </div>
+                    <hr style="color: #D9D9D9;margin-top: 50px;">
+                    <div class="parameter">
+                        <div class="child-parameter">
+                            <p class="p1">SKU</p>
+                            <p>: SS001</p>
+                        </div>
+                        <div class="child-parameter">
+                            <p class="p1">Category</p>
+                            <p>: Sofas</p>
+                        </div>
+                        <div class="child-parameter">
+                            <p class="p1">Tags</p>
+                            <p>: Sofa, Chair, Home, Shop</p>
+                        </div>
+                        <div class="child-parameter">
+                            <p class="p1">Share</p>
+                            <div class="icon">
+                                : <a href="https://www.facebook.com/andecu24"><i class="fa-brands fa-facebook"></i></a>
+                                <a href=""><i class="fa-brands fa-twitter"></i></a>
+                                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <hr style="color: #D9D9D9;margin-top: 50px;">
+            <div class="desciption-section1">
+                <div class="title">
+                    <h3>Description</h3>
+                    <h3 style="color: #9F9F9F;">Additional Information</h3>
+                    <h3 style="color: #9F9F9F;">Reviews [5]</h3>
+                </div>
+                <div class="desciption">
+                    <p>Embodying the raw, wayward spirit of rock n roll, the Kilburn portable active stereo speaker
+                        takes the unmistakable look and sound of Marshall, unplugs the chords, and takes the show on the
+                        road.</p>
+                    <p style="margin-top: 40px;">Weighing in under 7 pounds, the Kilburn is a lightweight piece of
+                        vintage styled engineering. Setting the bar as one of the loudest speakers in its class, the
+                        Kilburn is a compact, stout-hearted hero with a well-balanced audio which boasts a clear
+                        midrange and extended highs for a sound that is both articulate and pronounced. The analogue
+                        knobs allow you to fine tune the controls to your personal preferences while the
+                        guitar-influenced leather strap enables easy and stylish travel.</p>
+                </div>
+                <div class="image-des">
+                    <img src="./images/Group 107.png" alt="">
+                    <img src="./images/Group 107.png" alt="">
+                </div>
+            </div>
+            <hr style="color: #D9D9D9;margin-top: 50px;">
+            <div class="relatedProducts">
+                <h2>Related Products</h2>
+                <div class="section1" style="width: 90%;">
+                    <div class="title-section1">
+                    </div>
+                    <div class="products">
+                        <div class="card">
+                            <div class="image-item">
+                                <a href="">
+                                    <img src="./images/images.png" alt="">
+                                </a>
+                            </div>
+                            <div class="text-item">
+                                <h3>Syltherine</h3>
+                                <p>Stylish cafe chair</p>
+                            </div>
+                            <div class="discount">
+                                <h4>2.500.000đ</h4>
+                                <del>3.500.000đ</del>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image-item">
+                                <a href="">
+                                    <img src="./images/image 4.png" alt="">
+                                </a>
+                            </div>
+                            <div class="text-item">
+                                <h3>Syltherine</h3>
+                                <p>Stylish cafe chair</p>
+                            </div>
+                            <div class="discount">
+                                <h4>2.500.000đ</h4>
+                                <del>3.500.000đ</del>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image-item">
+                                <a href="">
+                                    <img src="./images/image 3.png" alt="">
+                                </a>
+                            </div>
+                            <div class="text-item">
+                                <h3>Respira</h3>
+                                <p>Outdoor bar table and stool</p>
+                            </div>
+                            <div class="discount">
+                                <h4>2.500.000đ</h4>
+                                <del>3.500.000đ</del>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="image-item">
+                                <a href="">
+                                    <img src="./images/images.png" alt="">
+                                </a>
+                            </div>
+                            <div class="text-item">
+                                <h3>Lolito</h3>
+                                <p>Luxury big sofa</p>
+                            </div>
+                            <div class="discount">
+                                <h4>2.500.000đ</h4>
+                                <del>3.500.000đ</del>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="more">
+                    <p>Show more</p>
+                </div>
+                <hr style="color: #D9D9D9;margin-top: 50px;">
+            </div>
+        </main>
+        <footer>
+            <div class="company">
+                <p class="title-footer">Funiro.</p>
+                <p>400 University Drive Suite 200 Coral <br> Gables,<br>
+                    FL 33134 USA</p>
+            </div>
+            <div class="links">
+                <p style="color: #9F9F9F;">Links</p>
+                <p>Home</p>
+                <p>Shop</p>
+                <p>About</p>
+                <p>Contact</p>
+            </div>
+            <div class="help">
+                <p style="color: #9F9F9F;">Help</p>
+                <p>Payment Options</p>
+                <p>Returns</p>
+                <p>Privacy Policies</p>
+            </div>
+            <div class="newletter">
+                <p style="color: #9F9F9F;">Newsletter</p>
+                <input type="text" placeholder="Enter Your Email Address">
+                <button>SUBSCRIBE</button>
+            </div>
+        </footer>
+        <div class="copyright">
+            <hr style="color: #D9D9D9;margin-top: 50px;">
+            <p style="margin-top: 30px;margin-bottom: 50px;">2023 furino. All rights reverved</p>
+        </div>
+    </div>
+</body>
+
+</html>

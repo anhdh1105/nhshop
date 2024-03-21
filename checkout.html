@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="font-fontawesome-ae333ffef2.js"></script>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+    body {
+        font-family: 'Poppins', sans-serif;
+    }
+
+    * {
+        margin: 0 auto;
+        box-sizing: border-box;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 1440px;
+    }
+
+    header {
+        height: 100px;
+        background-color: rgb(255, 255, 255);
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .logoHeader {
+        display: flex;
+    }
+
+    .logoHeader p {
+        font-size: x-large;
+        font-weight: bolder;
+    }
+
+    .menu ul {
+        margin-left: 100px;
+        display: flex;
+    }
+
+    .menu ul li {
+        margin: 20px;
+        list-style: none;
+    }
+
+    .menu ul li a {
+        text-decoration: none;
+        color: black;
+    }
+
+    .iconNavigate i {
+        margin: 20px;
+    }
+
+    main {
+        width: 82%;
+        display: flex;
+        margin-top: 50px;
+    }
+
+    .left {
+        width: 45%;
+    }
+
+    .left .title {
+        font-size: 36px;
+        font-weight: 600;
+    }
+
+    .left p {
+        font-size: 16px;
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+
+    .left .input-name {
+        display: flex;
+        margin-top: 20px;
+    }
+
+    .right {
+        width: 45%;
+    }
+
+    .first-name {
+        margin: 0;
+        padding: 0;
+    }
+
+    .last-name {
+        margin-right: 80px;
+    }
+
+    .company-name,
+    .country-name,
+    .address-name,
+    .city-name,
+    .province-name,
+    .zip-code,
+    .phone-number,
+    .email-address,
+    .addinformation {
+        margin-top: 30px;
+    }
+
+    .left .input-name input {
+        width: 212px;
+        height: 60px;
+        border: 1px solid #9F9F9F;
+        border-radius: 10px;
+    }
+
+    .left input,
+    select {
+        width: 450px;
+        height: 60px;
+        border: 1px solid #9F9F9F;
+        border-radius: 10px;
+        outline: none;
+        font-size: 16px;
+    }
+
+    select {
+        color: #9F9F9F;
+        font-size: 16px;
+    }
+
+    .product,
+    .product-name,
+    .subtotal,
+    .total {
+        display: flex;
+        margin-top: 15px;
+    }
+
+    .right .left-child {
+        margin: 0;
+        padding: 0;
+    }
+
+    .right button {
+        width: 320px;
+        height: 60px;
+        border-radius: 15px;
+        font-size: 20px;
+        font-weight: 400;
+        margin-left: 100px;
+        margin-top: 40px;
+        background-color: #fff;
+        border: 1px solid black;
+    }
+
+    .right-child {
+        margin-right: 0;
+        text-align: right;
+    }
+
+    .product {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .services {
+        margin-top: 100px;
+        display: flex;
+        height: 270px;
+        background-color: #FAF3EA;
+        align-items: center;
+    }
+
+    .services img {
+        height: 70px;
+    }
+
+    footer {
+        display: flex;
+        margin-top: 30px;
+        line-height: 50px;
+        font-weight: 500;
+    }
+
+    .copyright {
+        width: 92%;
+    }
+
+    .title-footer {
+        font-weight: 700;
+        font-size: 24px;
+    }
+
+    .newletter input,
+    button {
+        outline: none;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        margin: 10px;
+    }
+
+    input::placeholder {
+        font-weight: 400;
+        color: #9F9F9F;
+        padding: 0 25px;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="menuBar">
+                <div class="logoHeader">
+                    <a href="">
+                        <img src="/images/Meubel House_Logos-05.png" alt="">
+                    </a>
+                    <p class="logo-text">Furniro</p>
+                </div>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="Shop.html">Shop</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
+            </div>
+            <div class="iconNavigate">
+                <i class="fa-regular fa-user"></i>
+                <i class="fas fa-search"></i>
+                <i class="fa-regular fa-heart"></i>
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </header>
+
+        <div class="banner">
+            <img src="images/checkout-banner.png" alt="">
+        </div>
+        <main>
+            <div class="left">
+                <div class="title">Billing details</div>
+                <div class="input-infomation">
+                    <div class="input-name">
+                        <div class="first-name">
+                            <p>First Name</p>
+                            <input type="text">
+                        </div>
+                        <div class="last-name">
+                            <p>Last Name</p>
+                            <input type="text">
+                        </div>
+                    </div>
+                    <div class="company-name">
+                        <p>Company Name (Optional)</p>
+                        <input type="text">
+                    </div>
+                    <div class="country-name">
+                        <p>Country / Region</p>
+                        <select>
+                            <option value="option1">Vietnam</option>
+                            <option value="option2">USA</option>
+                            <option value="option3">England</option>
+                        </select>
+
+                    </div>
+                    <div class="address-name">
+                        <p>Street address</p>
+                        <input type="text">
+                    </div>
+                    <div class="city-name">
+                        <p>Town / City</p>
+                        <input type="text">
+                    </div>
+                    <div class="province-name">
+                        <p>Province</p>
+                        <select>
+                            <option value="option1">Vietnam</option>
+                            <option value="option2">USA</option>
+                            <option value="option3">England</option>
+                        </select>
+                    </div>
+                    <div class="zip-code">
+                        <p>ZIP code</p>
+                        <input type="text">
+                    </div>
+                    <div class="phone-number">
+                        <p>Phone number</p>
+                        <input type="text">
+                    </div>
+                    <div class="email-address">
+                        <p>Email address</p>
+                        <input type="text">
+                    </div>
+                    <input type="text" placeholder="Additional information" class="addinformation">
+
+                </div>
+            </div>
+            <div class="right">
+                <div class="product">
+                    <p class="left-child">Product</p>
+                    <p class="right-child">Subtotal</p>
+                </div>
+                <div class="product-name">
+                    <p class="left-child" style="color: #9F9F9F;">Asgaard sofa</p>
+                    <p>1</p>
+                    <p class="right-child">25.000.000đ</p>
+                </div>
+                <div class="subtotal">
+                    <p class="left-child">Subtotal</p>
+                    <p class="right-child">25.000.000đ</p>
+                </div>
+                <div class="total">
+                    <p class="left-child">Total</p>
+                    <p class="right-child" style="font-size: 24px;font-weight: 700;color: #B88E2F;">25.000.000đ</p>
+                </div>
+                <hr style="margin-top: 30px;margin-bottom: 10px;">
+                <div class="pttt">
+                    <form style="line-height: 50px;">
+                        <input type="radio" id="option1" name="options" value="option1">
+                        <label for="option1">Direct Bank Transfer</label><br>
+                        <input type="radio" id="option2" name="options" value="option2">
+                        <label for="option2">Direct Bank Transfer</label><br>
+                        <input type="radio" id="option3" name="options" value="option3">
+                        <label for="option3">Cash On Delivery</label><br>
+                    </form>
+                </div>
+                <div class="text">
+                    <p>Your personal data will be used to support your experience throughout this website, to manage
+                        access to your account, and for other purposes described in our <strong> privacy
+                            policy.</strong></p>
+                </div>
+                <button>Place Order</button>
+            </div>
+        </main>
+        <div class="services">
+            <img src="/images/Frame 5.png" alt="" style="width: 337px;">
+            <img src="/images/Frame 19.png" alt="" style="width: 328px;">
+            <img src="/images/Frame 2.png" alt="" style="width: 244px;">
+            <img src="/images/Frame 4.png" alt="" style="width: 259px;">
+        </div>
+        <footer>
+            <div class="company">
+                <p class="title-footer">Funiro.</p>
+                <p>400 University Drive Suite 200 Coral <br> Gables,<br>
+                    FL 33134 USA</p>
+            </div>
+            <div class="links">
+                <p style="color: #9F9F9F;">Links</p>
+                <p>Home</p>
+                <p>Shop</p>
+                <p>About</p>
+                <p>Contact</p>
+            </div>
+            <div class="help">
+                <p style="color: #9F9F9F;">Help</p>
+                <p>Payment Options</p>
+                <p>Returns</p>
+                <p>Privacy Policies</p>
+            </div>
+            <div class="newletter">
+                <p style="color: #9F9F9F;">Newsletter</p>
+                <input type="text" placeholder="Enter Your Email Address">
+                <button>SUBSCRIBE</button>
+            </div>
+        </footer>
+        <div class="copyright">
+            <hr style="color: #D9D9D9;margin-top: 50px;">
+            <p style="margin-top: 30px;margin-bottom: 50px;">2023 furino. All rights reverved</p>
+        </div>
+    </div>
+</body>
+
+</html>
